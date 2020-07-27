@@ -1,0 +1,19 @@
+{
+	"name": "Brunch-Template-Lighthouse",
+	"description": "Frontend boilerplate for small projects aiming to be shipped fast but still following best practices for performance and cool experiences which includes animation and experimental interactions.",
+	"private": false,
+	"author": "Andrew Alva",
+	"version": "0.1.0",
+	"repository": "",
+	"scripts": {
+		"start": "brunch watch --server",
+		"build": "brunch build --production"
+	},
+	"devDependencies": {
+		"auto-reload-brunch": "^2.7.1",
+		"brunch": "^3.0.0",
+		"jade-brunch": "^2.8.0",
+		"sass-brunch": "^3.0.0",
+		"uglify-js-brunch": "^2.10.0"
+	}
+}
