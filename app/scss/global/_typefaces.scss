@@ -1,0 +1,62 @@
+@font-face {
+	font-family: "DIN";
+	src: url("../fonts/DIN.woff2") format("woff2"), /* chrome、firefox */
+		url("../fonts/DIN.woff") format("woff"), /* chrome、firefox */
+		url("../fonts/DIN.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Avenir-B";
+	src: url("../fonts/Avenir-Book.woff2") format("woff2"), /* chrome、firefox */
+		url("../fonts/Avenir-Book.woff") format("woff"), /* chrome、firefox */
+		url("../fonts/Avenir-Book.ttf") format("truetype");
+}
+
+
+$main-font: "DIN", sans-serif;
+$secondary-font: "Avenir-B", sans-serif;
+
+*{
+	font-family: $main-font, Geneva, Calibri, Helvetica, sans-serif
+}
+
+
+.h1{
+	font-family: $main-font;
+	font-size: 40px;
+	line-height: 1em;
+	font-weight: lighter;
+	@include smoothFont;
+
+	@include tablet {
+		font-size: 80px;
+	}
+
+	@include laptop {
+		font-size: 90px;
+	}
+
+	@include small-desktop {
+		font-size: 120px;
+	}
+}
+
+.p1{
+	font-family: $main-font;
+	font-size: 12px;
+	line-height: 1.4em;
+	@include smoothFont;
+
+	@include tablet {
+		font-size: 16px;
+	}
+
+	@include small-desktop {
+		font-size: 18px;
+	}
+}
+
+
+
+
+

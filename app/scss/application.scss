@@ -8,8 +8,12 @@
 @import 'global/vars';
 @import 'global/mixins';
 @import 'global/media-queries';
+@import 'global/typefaces';
 
 @import 'global/default';
 @import 'global/grid';
 
-@import 'views/_index'
+@import 'views/_index';
+
+@import 'modules/hero-section';
+@import 'modules/header';

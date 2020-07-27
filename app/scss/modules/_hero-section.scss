@@ -1,0 +1,43 @@
+#hero-section{
+	.site-intro{
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		.left-wrap{
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 5em;
+			text-transform: uppercase;
+		}
+		
+		.right-wrap{
+			display: inline-block;
+
+			ul{
+				margin-bottom: 1em;
+			}
+		}
+
+		.description{
+			p{
+				padding-right: 38px;
+
+				& + p{
+					margin-top: 1.5em;
+				}
+			}
+		}
+	}
+}
+
+
+#hero-slider{
+	position: relative;
+	width: 100%;
+
+	.slides-container{}
+
+	.slide-wrap{
+		img{width: 100%;}
+	}
+}

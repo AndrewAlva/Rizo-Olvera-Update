@@ -1,7 +1,8 @@
 // Grid setup
 // Added "btl" prefix => Brunch Template Lighthouse
-	$grid__cols: 24;
-	$grid__maxWidth: 2600px;
+	$grid__cols: 16;
+	$grid__maxWidth: 1200px;
+	$desktop-grid__maxWidth: 1400px;
 
 	// Formula to get column width
 	@function getColWidth($amount){
@@ -9,38 +10,38 @@
 	}
 	
 	// default:	mobile
-	$mobile-grid__sidesMargin: 10px;
-	$mobile-grid__gutterWidth: 20px;
+	$mobile-grid__sidesMargin: 22px;
+	$mobile-grid__gutterWidth: 10px;
 	$mobile-grid__gutterHalfWidth: $mobile-grid__gutterWidth / 2;
 	
 	// xs:		large-mobile
-	$large-mobile-grid__sidesMargin: 10px;
-	$large-mobile-grid__gutterWidth: 20px;
+	$large-mobile-grid__sidesMargin: 22px;
+	$large-mobile-grid__gutterWidth: 10px;
 	$large-mobile-grid__gutterHalfWidth: $large-mobile-grid__gutterWidth / 2;
 
 	// sm:		tablet
-	$tablet-grid__sidesMargin: 10px;
-	$tablet-grid__gutterWidth: 20px;
+	$tablet-grid__sidesMargin: 22px;
+	$tablet-grid__gutterWidth: 16px;
 	$tablet-grid__gutterHalfWidth: $tablet-grid__gutterWidth / 2;
 
 	// md:		small-laptop
-	$small-laptop-grid__sidesMargin: 10px;
-	$small-laptop-grid__gutterWidth: 20px;
+	$small-laptop-grid__sidesMargin: 22px;
+	$small-laptop-grid__gutterWidth: 16px;
 	$small-laptop-grid__gutterHalfWidth: $small-laptop-grid__gutterWidth / 2;
 
 	// lg:		laptop
-	$laptop-grid__sidesMargin: 10px;
-	$laptop-grid__gutterWidth: 20px;
+	$laptop-grid__sidesMargin: 22px;
+	$laptop-grid__gutterWidth: 16px;
 	$laptop-grid__gutterHalfWidth: $laptop-grid__gutterWidth / 2;
 
 	// xl:		small-desktop
-	$small-desktop-grid__sidesMargin: 10px;
-	$small-desktop-grid__gutterWidth: 20px;
+	$small-desktop-grid__sidesMargin: 22px;
+	$small-desktop-grid__gutterWidth: 16px;
 	$small-desktop-grid__gutterHalfWidth: $small-desktop-grid__gutterWidth / 2;
 
 	// xxl:		desktop
-	$desktop-grid__sidesMargin: 10px;
-	$desktop-grid__gutterWidth: 20px;
+	$desktop-grid__sidesMargin: 22px;
+	$desktop-grid__gutterWidth: 16px;
 	$desktop-grid__gutterHalfWidth: $desktop-grid__gutterWidth / 2;
 
 
@@ -48,10 +49,10 @@
 	@import './grid-offset';
 	
 	// Enable push classes
-	@import './grid-push';
+	// @import './grid-push';
 	
 	// Enable order classes
-	@import './grid-order';
+	// @import './grid-order';
 
 
 .btl-grid{
@@ -88,6 +89,7 @@
 		padding-right: $small-desktop-grid__sidesMargin;
 	}
 	@include desktop {
+		max-width: $desktop-grid__maxWidth;
 		padding-left: $desktop-grid__sidesMargin;
 		padding-right: $desktop-grid__sidesMargin;
 	}

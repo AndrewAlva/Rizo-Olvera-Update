@@ -28,6 +28,10 @@ html(class='no-js')
 		link(rel='stylesheet', href='css/app.css')
 
 	body
+		//- Mixins
+		include ../_modules/_svg-mixins.jade
+
+
 		//- testing grid
 		//- .btl-grid.testing
 		.btl-grid.testing.view-padding
@@ -85,13 +89,9 @@ html(class='no-js')
 
 
 		//- header
-		.btl-grid
-			.btl-row
-				.btl-col-24
-					h1 Brunch Basic Boilerplate
-					h2 Media–queries Grid
-					h2 24 columns enabled
-					h4 Built from scratch, no libraries yet but add as many as you please.
+		include ../_modules/header.jade
+
+					
 
 		//- content
 		#main-wrapper
