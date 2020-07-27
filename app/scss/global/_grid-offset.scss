@@ -1,0 +1,195 @@
+.btl-offset-0{margin-left: 0;}
+.btl-offset-1{margin-left: getColWidth(1);}
+.btl-offset-2{margin-left: getColWidth(2);}
+.btl-offset-3{margin-left: getColWidth(3);}
+.btl-offset-4{margin-left: getColWidth(4);}
+.btl-offset-5{margin-left: getColWidth(5);}
+.btl-offset-6{margin-left: getColWidth(6);}
+.btl-offset-7{margin-left: getColWidth(7);}
+.btl-offset-8{margin-left: getColWidth(8);}
+.btl-offset-9{margin-left: getColWidth(9);}
+.btl-offset-10{margin-left: getColWidth(10);}
+.btl-offset-11{margin-left: getColWidth(11);}
+.btl-offset-12{margin-left: getColWidth(12);}
+.btl-offset-13{margin-left: getColWidth(13);}
+.btl-offset-14{margin-left: getColWidth(14);}
+.btl-offset-15{margin-left: getColWidth(15);}
+.btl-offset-16{margin-left: getColWidth(16);}
+.btl-offset-17{margin-left: getColWidth(17);}
+.btl-offset-18{margin-left: getColWidth(18);}
+.btl-offset-19{margin-left: getColWidth(19);}
+.btl-offset-20{margin-left: getColWidth(20);}
+.btl-offset-21{margin-left: getColWidth(21);}
+.btl-offset-22{margin-left: getColWidth(22);}
+.btl-offset-23{margin-left: getColWidth(23);}
+
+// xs
+@include large-mobile {
+	.btl-offset-xs-0{margin-left: 0;}
+	.btl-offset-xs-1{margin-left: getColWidth(1);}
+	.btl-offset-xs-2{margin-left: getColWidth(2);}
+	.btl-offset-xs-3{margin-left: getColWidth(3);}
+	.btl-offset-xs-4{margin-left: getColWidth(4);}
+	.btl-offset-xs-5{margin-left: getColWidth(5);}
+	.btl-offset-xs-6{margin-left: getColWidth(6);}
+	.btl-offset-xs-7{margin-left: getColWidth(7);}
+	.btl-offset-xs-8{margin-left: getColWidth(8);}
+	.btl-offset-xs-9{margin-left: getColWidth(9);}
+	.btl-offset-xs-10{margin-left: getColWidth(10);}
+	.btl-offset-xs-11{margin-left: getColWidth(11);}
+	.btl-offset-xs-12{margin-left: getColWidth(12);}
+	.btl-offset-xs-13{margin-left: getColWidth(13);}
+	.btl-offset-xs-14{margin-left: getColWidth(14);}
+	.btl-offset-xs-15{margin-left: getColWidth(15);}
+	.btl-offset-xs-16{margin-left: getColWidth(16);}
+	.btl-offset-xs-17{margin-left: getColWidth(17);}
+	.btl-offset-xs-18{margin-left: getColWidth(18);}
+	.btl-offset-xs-19{margin-left: getColWidth(19);}
+	.btl-offset-xs-20{margin-left: getColWidth(20);}
+	.btl-offset-xs-21{margin-left: getColWidth(21);}
+	.btl-offset-xs-22{margin-left: getColWidth(22);}
+	.btl-offset-xs-23{margin-left: getColWidth(23);}
+}
+
+// sm
+@include tablet {
+	.btl-offset-sm-0{margin-left: 0;}
+	.btl-offset-sm-1{margin-left: getColWidth(1);}
+	.btl-offset-sm-2{margin-left: getColWidth(2);}
+	.btl-offset-sm-3{margin-left: getColWidth(3);}
+	.btl-offset-sm-4{margin-left: getColWidth(4);}
+	.btl-offset-sm-5{margin-left: getColWidth(5);}
+	.btl-offset-sm-6{margin-left: getColWidth(6);}
+	.btl-offset-sm-7{margin-left: getColWidth(7);}
+	.btl-offset-sm-8{margin-left: getColWidth(8);}
+	.btl-offset-sm-9{margin-left: getColWidth(9);}
+	.btl-offset-sm-10{margin-left: getColWidth(10);}
+	.btl-offset-sm-11{margin-left: getColWidth(11);}
+	.btl-offset-sm-12{margin-left: getColWidth(12);}
+	.btl-offset-sm-13{margin-left: getColWidth(13);}
+	.btl-offset-sm-14{margin-left: getColWidth(14);}
+	.btl-offset-sm-15{margin-left: getColWidth(15);}
+	.btl-offset-sm-16{margin-left: getColWidth(16);}
+	.btl-offset-sm-17{margin-left: getColWidth(17);}
+	.btl-offset-sm-18{margin-left: getColWidth(18);}
+	.btl-offset-sm-19{margin-left: getColWidth(19);}
+	.btl-offset-sm-20{margin-left: getColWidth(20);}
+	.btl-offset-sm-21{margin-left: getColWidth(21);}
+	.btl-offset-sm-22{margin-left: getColWidth(22);}
+	.btl-offset-sm-23{margin-left: getColWidth(23);}
+}
+
+// md
+@include small-laptop {
+	.btl-offset-md-0{margin-left: 0;}
+	.btl-offset-md-1{margin-left: getColWidth(1);}
+	.btl-offset-md-2{margin-left: getColWidth(2);}
+	.btl-offset-md-3{margin-left: getColWidth(3);}
+	.btl-offset-md-4{margin-left: getColWidth(4);}
+	.btl-offset-md-5{margin-left: getColWidth(5);}
+	.btl-offset-md-6{margin-left: getColWidth(6);}
+	.btl-offset-md-7{margin-left: getColWidth(7);}
+	.btl-offset-md-8{margin-left: getColWidth(8);}
+	.btl-offset-md-9{margin-left: getColWidth(9);}
+	.btl-offset-md-10{margin-left: getColWidth(10);}
+	.btl-offset-md-11{margin-left: getColWidth(11);}
+	.btl-offset-md-12{margin-left: getColWidth(12);}
+	.btl-offset-md-13{margin-left: getColWidth(13);}
+	.btl-offset-md-14{margin-left: getColWidth(14);}
+	.btl-offset-md-15{margin-left: getColWidth(15);}
+	.btl-offset-md-16{margin-left: getColWidth(16);}
+	.btl-offset-md-17{margin-left: getColWidth(17);}
+	.btl-offset-md-18{margin-left: getColWidth(18);}
+	.btl-offset-md-19{margin-left: getColWidth(19);}
+	.btl-offset-md-20{margin-left: getColWidth(20);}
+	.btl-offset-md-21{margin-left: getColWidth(21);}
+	.btl-offset-md-22{margin-left: getColWidth(22);}
+	.btl-offset-md-23{margin-left: getColWidth(23);}
+}
+	
+// lg
+@include laptop {
+	.btl-offset-lg-0{margin-left: 0;}
+	.btl-offset-lg-1{margin-left: getColWidth(1);}
+	.btl-offset-lg-2{margin-left: getColWidth(2);}
+	.btl-offset-lg-3{margin-left: getColWidth(3);}
+	.btl-offset-lg-4{margin-left: getColWidth(4);}
+	.btl-offset-lg-5{margin-left: getColWidth(5);}
+	.btl-offset-lg-6{margin-left: getColWidth(6);}
+	.btl-offset-lg-7{margin-left: getColWidth(7);}
+	.btl-offset-lg-8{margin-left: getColWidth(8);}
+	.btl-offset-lg-9{margin-left: getColWidth(9);}
+	.btl-offset-lg-10{margin-left: getColWidth(10);}
+	.btl-offset-lg-11{margin-left: getColWidth(11);}
+	.btl-offset-lg-12{margin-left: getColWidth(12);}
+	.btl-offset-lg-13{margin-left: getColWidth(13);}
+	.btl-offset-lg-14{margin-left: getColWidth(14);}
+	.btl-offset-lg-15{margin-left: getColWidth(15);}
+	.btl-offset-lg-16{margin-left: getColWidth(16);}
+	.btl-offset-lg-17{margin-left: getColWidth(17);}
+	.btl-offset-lg-18{margin-left: getColWidth(18);}
+	.btl-offset-lg-19{margin-left: getColWidth(19);}
+	.btl-offset-lg-20{margin-left: getColWidth(20);}
+	.btl-offset-lg-21{margin-left: getColWidth(21);}
+	.btl-offset-lg-22{margin-left: getColWidth(22);}
+	.btl-offset-lg-23{margin-left: getColWidth(23);}
+}
+	
+// xl
+@include small-desktop {
+	.btl-offset-xl-0{margin-left: 0;}
+	.btl-offset-xl-1{margin-left: getColWidth(1);}
+	.btl-offset-xl-2{margin-left: getColWidth(2);}
+	.btl-offset-xl-3{margin-left: getColWidth(3);}
+	.btl-offset-xl-4{margin-left: getColWidth(4);}
+	.btl-offset-xl-5{margin-left: getColWidth(5);}
+	.btl-offset-xl-6{margin-left: getColWidth(6);}
+	.btl-offset-xl-7{margin-left: getColWidth(7);}
+	.btl-offset-xl-8{margin-left: getColWidth(8);}
+	.btl-offset-xl-9{margin-left: getColWidth(9);}
+	.btl-offset-xl-10{margin-left: getColWidth(10);}
+	.btl-offset-xl-11{margin-left: getColWidth(11);}
+	.btl-offset-xl-12{margin-left: getColWidth(12);}
+	.btl-offset-xl-13{margin-left: getColWidth(13);}
+	.btl-offset-xl-14{margin-left: getColWidth(14);}
+	.btl-offset-xl-15{margin-left: getColWidth(15);}
+	.btl-offset-xl-16{margin-left: getColWidth(16);}
+	.btl-offset-xl-17{margin-left: getColWidth(17);}
+	.btl-offset-xl-18{margin-left: getColWidth(18);}
+	.btl-offset-xl-19{margin-left: getColWidth(19);}
+	.btl-offset-xl-20{margin-left: getColWidth(20);}
+	.btl-offset-xl-21{margin-left: getColWidth(21);}
+	.btl-offset-xl-22{margin-left: getColWidth(22);}
+	.btl-offset-xl-23{margin-left: getColWidth(23);}
+}
+
+// xxl
+@include desktop {
+	.btl-offset-xxl-0{margin-left: 0;}
+	.btl-offset-xxl-1{margin-left: getColWidth(1);}
+	.btl-offset-xxl-2{margin-left: getColWidth(2);}
+	.btl-offset-xxl-3{margin-left: getColWidth(3);}
+	.btl-offset-xxl-4{margin-left: getColWidth(4);}
+	.btl-offset-xxl-5{margin-left: getColWidth(5);}
+	.btl-offset-xxl-6{margin-left: getColWidth(6);}
+	.btl-offset-xxl-7{margin-left: getColWidth(7);}
+	.btl-offset-xxl-8{margin-left: getColWidth(8);}
+	.btl-offset-xxl-9{margin-left: getColWidth(9);}
+	.btl-offset-xxl-10{margin-left: getColWidth(10);}
+	.btl-offset-xxl-11{margin-left: getColWidth(11);}
+	.btl-offset-xxl-12{margin-left: getColWidth(12);}
+	.btl-offset-xxl-13{margin-left: getColWidth(13);}
+	.btl-offset-xxl-14{margin-left: getColWidth(14);}
+	.btl-offset-xxl-15{margin-left: getColWidth(15);}
+	.btl-offset-xxl-16{margin-left: getColWidth(16);}
+	.btl-offset-xxl-17{margin-left: getColWidth(17);}
+	.btl-offset-xxl-18{margin-left: getColWidth(18);}
+	.btl-offset-xxl-19{margin-left: getColWidth(19);}
+	.btl-offset-xxl-20{margin-left: getColWidth(20);}
+	.btl-offset-xxl-21{margin-left: getColWidth(21);}
+	.btl-offset-xxl-22{margin-left: getColWidth(22);}
+	.btl-offset-xxl-23{margin-left: getColWidth(23);}
+}
+
+
+

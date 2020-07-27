@@ -1,0 +1,195 @@
+.btl-push-0{margin-right: 0;}
+.btl-push-1{margin-right: getColWidth(1);}
+.btl-push-2{margin-right: getColWidth(2);}
+.btl-push-3{margin-right: getColWidth(3);}
+.btl-push-4{margin-right: getColWidth(4);}
+.btl-push-5{margin-right: getColWidth(5);}
+.btl-push-6{margin-right: getColWidth(6);}
+.btl-push-7{margin-right: getColWidth(7);}
+.btl-push-8{margin-right: getColWidth(8);}
+.btl-push-9{margin-right: getColWidth(9);}
+.btl-push-10{margin-right: getColWidth(10);}
+.btl-push-11{margin-right: getColWidth(11);}
+.btl-push-12{margin-right: getColWidth(12);}
+.btl-push-13{margin-right: getColWidth(13);}
+.btl-push-14{margin-right: getColWidth(14);}
+.btl-push-15{margin-right: getColWidth(15);}
+.btl-push-16{margin-right: getColWidth(16);}
+.btl-push-17{margin-right: getColWidth(17);}
+.btl-push-18{margin-right: getColWidth(18);}
+.btl-push-19{margin-right: getColWidth(19);}
+.btl-push-20{margin-right: getColWidth(20);}
+.btl-push-21{margin-right: getColWidth(21);}
+.btl-push-22{margin-right: getColWidth(22);}
+.btl-push-23{margin-right: getColWidth(23);}
+
+// xs
+@include large-mobile {
+	.btl-push-xs-0{margin-right: 0;}
+	.btl-push-xs-1{margin-right: getColWidth(1);}
+	.btl-push-xs-2{margin-right: getColWidth(2);}
+	.btl-push-xs-3{margin-right: getColWidth(3);}
+	.btl-push-xs-4{margin-right: getColWidth(4);}
+	.btl-push-xs-5{margin-right: getColWidth(5);}
+	.btl-push-xs-6{margin-right: getColWidth(6);}
+	.btl-push-xs-7{margin-right: getColWidth(7);}
+	.btl-push-xs-8{margin-right: getColWidth(8);}
+	.btl-push-xs-9{margin-right: getColWidth(9);}
+	.btl-push-xs-10{margin-right: getColWidth(10);}
+	.btl-push-xs-11{margin-right: getColWidth(11);}
+	.btl-push-xs-12{margin-right: getColWidth(12);}
+	.btl-push-xs-13{margin-right: getColWidth(13);}
+	.btl-push-xs-14{margin-right: getColWidth(14);}
+	.btl-push-xs-15{margin-right: getColWidth(15);}
+	.btl-push-xs-16{margin-right: getColWidth(16);}
+	.btl-push-xs-17{margin-right: getColWidth(17);}
+	.btl-push-xs-18{margin-right: getColWidth(18);}
+	.btl-push-xs-19{margin-right: getColWidth(19);}
+	.btl-push-xs-20{margin-right: getColWidth(20);}
+	.btl-push-xs-21{margin-right: getColWidth(21);}
+	.btl-push-xs-22{margin-right: getColWidth(22);}
+	.btl-push-xs-23{margin-right: getColWidth(23);}
+}
+
+// sm
+@include tablet {
+	.btl-push-sm-0{margin-right: 0;}
+	.btl-push-sm-1{margin-right: getColWidth(1);}
+	.btl-push-sm-2{margin-right: getColWidth(2);}
+	.btl-push-sm-3{margin-right: getColWidth(3);}
+	.btl-push-sm-4{margin-right: getColWidth(4);}
+	.btl-push-sm-5{margin-right: getColWidth(5);}
+	.btl-push-sm-6{margin-right: getColWidth(6);}
+	.btl-push-sm-7{margin-right: getColWidth(7);}
+	.btl-push-sm-8{margin-right: getColWidth(8);}
+	.btl-push-sm-9{margin-right: getColWidth(9);}
+	.btl-push-sm-10{margin-right: getColWidth(10);}
+	.btl-push-sm-11{margin-right: getColWidth(11);}
+	.btl-push-sm-12{margin-right: getColWidth(12);}
+	.btl-push-sm-13{margin-right: getColWidth(13);}
+	.btl-push-sm-14{margin-right: getColWidth(14);}
+	.btl-push-sm-15{margin-right: getColWidth(15);}
+	.btl-push-sm-16{margin-right: getColWidth(16);}
+	.btl-push-sm-17{margin-right: getColWidth(17);}
+	.btl-push-sm-18{margin-right: getColWidth(18);}
+	.btl-push-sm-19{margin-right: getColWidth(19);}
+	.btl-push-sm-20{margin-right: getColWidth(20);}
+	.btl-push-sm-21{margin-right: getColWidth(21);}
+	.btl-push-sm-22{margin-right: getColWidth(22);}
+	.btl-push-sm-23{margin-right: getColWidth(23);}
+}
+
+// md
+@include small-laptop {
+	.btl-push-md-0{margin-right: 0;}
+	.btl-push-md-1{margin-right: getColWidth(1);}
+	.btl-push-md-2{margin-right: getColWidth(2);}
+	.btl-push-md-3{margin-right: getColWidth(3);}
+	.btl-push-md-4{margin-right: getColWidth(4);}
+	.btl-push-md-5{margin-right: getColWidth(5);}
+	.btl-push-md-6{margin-right: getColWidth(6);}
+	.btl-push-md-7{margin-right: getColWidth(7);}
+	.btl-push-md-8{margin-right: getColWidth(8);}
+	.btl-push-md-9{margin-right: getColWidth(9);}
+	.btl-push-md-10{margin-right: getColWidth(10);}
+	.btl-push-md-11{margin-right: getColWidth(11);}
+	.btl-push-md-12{margin-right: getColWidth(12);}
+	.btl-push-md-13{margin-right: getColWidth(13);}
+	.btl-push-md-14{margin-right: getColWidth(14);}
+	.btl-push-md-15{margin-right: getColWidth(15);}
+	.btl-push-md-16{margin-right: getColWidth(16);}
+	.btl-push-md-17{margin-right: getColWidth(17);}
+	.btl-push-md-18{margin-right: getColWidth(18);}
+	.btl-push-md-19{margin-right: getColWidth(19);}
+	.btl-push-md-20{margin-right: getColWidth(20);}
+	.btl-push-md-21{margin-right: getColWidth(21);}
+	.btl-push-md-22{margin-right: getColWidth(22);}
+	.btl-push-md-23{margin-right: getColWidth(23);}
+}
+	
+// lg
+@include laptop {
+	.btl-push-lg-0{margin-right: 0;}
+	.btl-push-lg-1{margin-right: getColWidth(1);}
+	.btl-push-lg-2{margin-right: getColWidth(2);}
+	.btl-push-lg-3{margin-right: getColWidth(3);}
+	.btl-push-lg-4{margin-right: getColWidth(4);}
+	.btl-push-lg-5{margin-right: getColWidth(5);}
+	.btl-push-lg-6{margin-right: getColWidth(6);}
+	.btl-push-lg-7{margin-right: getColWidth(7);}
+	.btl-push-lg-8{margin-right: getColWidth(8);}
+	.btl-push-lg-9{margin-right: getColWidth(9);}
+	.btl-push-lg-10{margin-right: getColWidth(10);}
+	.btl-push-lg-11{margin-right: getColWidth(11);}
+	.btl-push-lg-12{margin-right: getColWidth(12);}
+	.btl-push-lg-13{margin-right: getColWidth(13);}
+	.btl-push-lg-14{margin-right: getColWidth(14);}
+	.btl-push-lg-15{margin-right: getColWidth(15);}
+	.btl-push-lg-16{margin-right: getColWidth(16);}
+	.btl-push-lg-17{margin-right: getColWidth(17);}
+	.btl-push-lg-18{margin-right: getColWidth(18);}
+	.btl-push-lg-19{margin-right: getColWidth(19);}
+	.btl-push-lg-20{margin-right: getColWidth(20);}
+	.btl-push-lg-21{margin-right: getColWidth(21);}
+	.btl-push-lg-22{margin-right: getColWidth(22);}
+	.btl-push-lg-23{margin-right: getColWidth(23);}
+}
+	
+// xl
+@include small-desktop {
+	.btl-push-xl-0{margin-right: 0;}
+	.btl-push-xl-1{margin-right: getColWidth(1);}
+	.btl-push-xl-2{margin-right: getColWidth(2);}
+	.btl-push-xl-3{margin-right: getColWidth(3);}
+	.btl-push-xl-4{margin-right: getColWidth(4);}
+	.btl-push-xl-5{margin-right: getColWidth(5);}
+	.btl-push-xl-6{margin-right: getColWidth(6);}
+	.btl-push-xl-7{margin-right: getColWidth(7);}
+	.btl-push-xl-8{margin-right: getColWidth(8);}
+	.btl-push-xl-9{margin-right: getColWidth(9);}
+	.btl-push-xl-10{margin-right: getColWidth(10);}
+	.btl-push-xl-11{margin-right: getColWidth(11);}
+	.btl-push-xl-12{margin-right: getColWidth(12);}
+	.btl-push-xl-13{margin-right: getColWidth(13);}
+	.btl-push-xl-14{margin-right: getColWidth(14);}
+	.btl-push-xl-15{margin-right: getColWidth(15);}
+	.btl-push-xl-16{margin-right: getColWidth(16);}
+	.btl-push-xl-17{margin-right: getColWidth(17);}
+	.btl-push-xl-18{margin-right: getColWidth(18);}
+	.btl-push-xl-19{margin-right: getColWidth(19);}
+	.btl-push-xl-20{margin-right: getColWidth(20);}
+	.btl-push-xl-21{margin-right: getColWidth(21);}
+	.btl-push-xl-22{margin-right: getColWidth(22);}
+	.btl-push-xl-23{margin-right: getColWidth(23);}
+}
+
+// xxl
+@include desktop {
+	.btl-push-xxl-0{margin-right: 0;}
+	.btl-push-xxl-1{margin-right: getColWidth(1);}
+	.btl-push-xxl-2{margin-right: getColWidth(2);}
+	.btl-push-xxl-3{margin-right: getColWidth(3);}
+	.btl-push-xxl-4{margin-right: getColWidth(4);}
+	.btl-push-xxl-5{margin-right: getColWidth(5);}
+	.btl-push-xxl-6{margin-right: getColWidth(6);}
+	.btl-push-xxl-7{margin-right: getColWidth(7);}
+	.btl-push-xxl-8{margin-right: getColWidth(8);}
+	.btl-push-xxl-9{margin-right: getColWidth(9);}
+	.btl-push-xxl-10{margin-right: getColWidth(10);}
+	.btl-push-xxl-11{margin-right: getColWidth(11);}
+	.btl-push-xxl-12{margin-right: getColWidth(12);}
+	.btl-push-xxl-13{margin-right: getColWidth(13);}
+	.btl-push-xxl-14{margin-right: getColWidth(14);}
+	.btl-push-xxl-15{margin-right: getColWidth(15);}
+	.btl-push-xxl-16{margin-right: getColWidth(16);}
+	.btl-push-xxl-17{margin-right: getColWidth(17);}
+	.btl-push-xxl-18{margin-right: getColWidth(18);}
+	.btl-push-xxl-19{margin-right: getColWidth(19);}
+	.btl-push-xxl-20{margin-right: getColWidth(20);}
+	.btl-push-xxl-21{margin-right: getColWidth(21);}
+	.btl-push-xxl-22{margin-right: getColWidth(22);}
+	.btl-push-xxl-23{margin-right: getColWidth(23);}
+}
+
+
+

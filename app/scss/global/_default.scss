@@ -1,6 +1,6 @@
 // Default style
-*{
-	@include border-box;
+*, ::before, ::after{
+	box-sizing: border-box;
 }
 
 body{
