@@ -1,17 +1,36 @@
 #hero-section{
 	.site-intro{
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-top: 28px;
+		padding-bottom: 28px;
+
+		@include tablet {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
 
 		.left-wrap{
-			display: inline-block;
-			vertical-align: top;
-			margin-right: 5em;
+			margin-right: 3em;
 			text-transform: uppercase;
+
+			@include large-mobile {
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			@include laptop {margin-right: 5em;}
+
+			._title{
+				margin-bottom: 1em;
+				font-weight: 300;
+
+				@include large-mobile {margin-bottom: 0;}
+			}
 		}
 		
 		.right-wrap{
-			display: inline-block;
+			@include large-mobile {
+				display: inline-block;
+			}
 
 			ul{
 				margin-bottom: 1em;
@@ -20,7 +39,8 @@
 
 		.description{
 			p{
-				padding-right: 38px;
+				padding-right: 12px;
+				@include tablet {padding-right: 38px;}
 
 				& + p{
 					margin-top: 1.5em;

@@ -13,48 +13,53 @@
 }
 
 
-$main-font: "DIN", sans-serif;
-$secondary-font: "Avenir-B", sans-serif;
+$main-font: "DIN", Geneva, Calibri, Helvetica, sans-serif;
+$secondary-font: "Avenir-B", Segoe UI, Century Gothic, CenturyGothic, AppleGothic, Helvetica Neue, Helvetica, Arial, sans-serif;
 
 *{
-	font-family: $main-font, Geneva, Calibri, Helvetica, sans-serif
+	font-family: $main-font;
 }
 
 
-.h1{
+.f1{
 	font-family: $main-font;
-	font-size: 40px;
-	line-height: 1em;
+	font-size: 11px;
+	line-height: 1.5em;
 	font-weight: lighter;
-	@include smoothFont;
 
 	@include tablet {
-		font-size: 80px;
+		font-size: 12px;
 	}
 
 	@include laptop {
-		font-size: 90px;
-	}
-
-	@include small-desktop {
-		font-size: 120px;
+		font-size: 14px
 	}
 }
 
-.p1{
+.f2{
 	font-family: $main-font;
-	font-size: 12px;
-	line-height: 1.4em;
-	@include smoothFont;
+	font-size: 10px;
+	line-height: 1.5em;
 
 	@include tablet {
-		font-size: 16px;
+		font-size: 11px;
 	}
 
-	@include small-desktop {
-		font-size: 18px;
+	@include laptop {
+		font-size: 12px;
 	}
 }
+
+.t1{
+	font-family: $secondary-font;
+}
+
+// din
+// 	10px
+// 	11px
+
+// avenir
+// 	16px
 
 
 

@@ -1,7 +1,8 @@
 // Grid setup
 // Added "btl" prefix => Brunch Template Lighthouse
 	$grid__cols: 16;
-	$grid__maxWidth: 1200px;
+	$grid__maxWidth: 900px;
+	$laptop-grid__maxWidth: 1200px;
 	$desktop-grid__maxWidth: 1400px;
 
 	// Formula to get column width
@@ -10,12 +11,12 @@
 	}
 	
 	// default:	mobile
-	$mobile-grid__sidesMargin: 22px;
+	$mobile-grid__sidesMargin: 10px;
 	$mobile-grid__gutterWidth: 10px;
 	$mobile-grid__gutterHalfWidth: $mobile-grid__gutterWidth / 2;
 	
 	// xs:		large-mobile
-	$large-mobile-grid__sidesMargin: 22px;
+	$large-mobile-grid__sidesMargin: 10px;
 	$large-mobile-grid__gutterWidth: 10px;
 	$large-mobile-grid__gutterHalfWidth: $large-mobile-grid__gutterWidth / 2;
 
@@ -81,6 +82,8 @@
 		padding-right: $small-laptop-grid__sidesMargin;
 	}
 	@include laptop {
+		max-width: $laptop-grid__maxWidth;
+
 		padding-left: $laptop-grid__sidesMargin;
 		padding-right: $laptop-grid__sidesMargin;
 	}
@@ -90,6 +93,7 @@
 	}
 	@include desktop {
 		max-width: $desktop-grid__maxWidth;
+		
 		padding-left: $desktop-grid__sidesMargin;
 		padding-right: $desktop-grid__sidesMargin;
 	}
