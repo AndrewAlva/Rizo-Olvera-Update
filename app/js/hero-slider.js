@@ -24,7 +24,7 @@ var Hero_Slider = {
 	},
 	
 	switchSlides: function(){
-		console.log('Switching slides');
+		// console.log('Switching slides');
 		this.updateCounter();
 		
 		for (var i = 0; i < this.slides.length; i++) {

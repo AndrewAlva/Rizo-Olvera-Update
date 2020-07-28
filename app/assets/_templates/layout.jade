@@ -6,23 +6,51 @@ html(class='no-js')
 		meta(name='viewport', content='shrink-to-fit=no, initial-scale=1.0, minimum-scale=1, width=device-width, height=device-height')
 
 		block title
-			title Brunch_Basic_Boilerplate
+			title RIZO + OLVERA | Arquitectura Interiorismo
 
 		//- metatags
 		block google_metatags
-			meta(name='description', content='Page_description')
+			meta(name='description', content='Dedicados a la realización de estudios, proyectos y obras del ramo de la arquitectura, diseño interior, obra civil, equipamiento y urbanización. Integrando colaboradores en ramos como el diseño industrial y el gráfico para atender las diferentes disciplinas y servicios conexos.')
 			meta(name='subject', content='Page_subject')
 
 		//- Share graphs for social media
 		block og_metatags
-			meta(property="og:url" 			content="PLACE_YOUR_URL")
-			meta(property="og:title" 		content="PLACE_YOUR_TITLE")
-			meta(property="og:description" 	content="PLACE_YOUR_DESCRIPTION")
-			meta(property="og:image" 		content="PLACE_YOUR_IMAGE_URL")
+			meta(property="og:url" 			content="https://rizo-olvera.com/")
+			link(rel="canonical" href="https://rizo-olvera.com/")
+
+			//- <!-- titles -->
+			meta(property='og:title' 		content="RIZO + OLVERA | Arquitectura Interiorismo")
+			meta(name='twitter:title' 		content="RIZO + OLVERA | Arquitectura Interiorismo")
+			meta(name='title' 				content="RIZO + OLVERA | Arquitectura Interiorismo")
+
+			meta(name='description' 		content='Dedicados a la realización de estudios, proyectos y obras del ramo de la arquitectura, diseño interior, obra civil, equipamiento y urbanización. Integrando colaboradores en ramos como el diseño industrial y el gráfico para atender las diferentes disciplinas y servicios conexos.')
+			meta(property='og:description' 	content='Dedicados a la realización de estudios, proyectos y obras del ramo de la arquitectura, diseño interior, obra civil, equipamiento y urbanización. Integrando colaboradores en ramos como el diseño industrial y el gráfico para atender las diferentes disciplinas y servicios conexos.')
+			meta(name='twitter:description' content='Dedicados a la realización de estudios, proyectos y obras del ramo de la arquitectura, diseño interior, obra civil, equipamiento y urbanización. Integrando colaboradores en ramos como el diseño industrial y el gráfico para atender las diferentes disciplinas y servicios conexos.')
+
+			meta(name='image' 			content='https://rizo-olvera.com/share-graph.jpg')
+			meta(property='og:image' 	content='https://rizo-olvera.com/share-graph.jpg')
+			meta(name='twitter:image' 	content='https://rizo-olvera.com/share-graph.jpg')
+
+
+		//- General Metatags
+		meta(name="twitter:card" 		content="summary_large_image")
+		meta(name="twitter:site" 		content="@andrew__alva")
+		meta(name="twitter:creator" 	content="@andrew__alva")
+		meta(name="author" 				content="Rizo + Olvera | Arquitectura Interiorismo")
 
 		//- Share graphs that doesn't change
 		meta(property="og:type" 		content="website")
-		meta(name="twitter:card", content="summary")
+		meta(name='keywords' 	content='')
+		meta(name='date' 		content='' scheme="YYYY-MM-DD")
+
+		//- Favicon
+		link(rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png")
+		link(rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png")
+		link(rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png")
+		//- link(rel="manifest" href="site.webmanifest")
+		link(rel="mask-icon" href="safari-pinned-tab.svg" color="#002571")
+		meta(name="msapplication-TileColor" content="#002571")
+		meta(name="theme-color" content="#ffffff")
 
 		//- stylesheets
 		link(rel='stylesheet', href='css/app.css')
@@ -99,3 +127,5 @@ html(class='no-js')
 
 		//- scripts
 		script(src='js/app.js')
+
+

@@ -1,8 +1,8 @@
 var HeroSlider_Interval_Switch;
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Do something
-    HeroSlider_Interval_Switch = new Inview_Switch({
+	// Do something
+	HeroSlider_Interval_Switch = new Inview_Switch({
 		id:'hero-slider',
 		
 		OnCallback: function(){
@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Trigger functions after page is completely loaded
 window.onload = function() {
-    // Do something, remove preloader perhaps
-    console.log("Page fully loaded.");
-    console.log("Initialize.js");
+	// Do something, remove preloader perhaps
+	console.log("Page fully loaded.");
+	console.log("Initialize.js");
 
-    Hero_Slider.init();
-    HeroSlider_Interval_Switch.init();
+	// Hero_Slider.init();
+	// HeroSlider_Interval_Switch.init();
 }
