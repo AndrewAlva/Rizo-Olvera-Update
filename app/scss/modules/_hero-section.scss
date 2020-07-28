@@ -1,4 +1,6 @@
 #hero-section{
+	height: 2000px;
+
 	.site-intro{
 		padding-top: 28px;
 		padding-bottom: 28px;
@@ -23,7 +25,12 @@
 				margin-bottom: 1em;
 				font-weight: 300;
 
-				@include large-mobile {margin-bottom: 0;}
+				@include large-mobile {
+					margin-top: .1em;
+					margin-bottom: 0;
+				}
+
+				@include laptop {margin-top: .2em;}
 			}
 		}
 		
@@ -55,9 +62,30 @@
 	position: relative;
 	width: 100%;
 
-	.slides-container{}
+	.slides-container{
+		position: relative;
+		width: 100%;
+		padding-bottom: 55.55%;
+		overflow: hidden;
+	}
 
 	.slide-wrap{
-		img{width: 100%;}
+		position: absolute;
+		top: 0; left: 0;
+		opacity: 0;
+		@include scale(1.2, 1.2);
+		transform-origin: center center;
+		@include transitions-ease(1s);
+
+		img{
+			width: 100%;
+			vertical-align: top;
+		}
+
+		&.active{
+			opacity: 1;
+			transform-origin: top center;
+			@include scale(1,1);
+		}
 	}
 }

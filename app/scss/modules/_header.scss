@@ -53,8 +53,23 @@
 
 		@include desktop {width: 42px;}
 
-		a{display: block;}
+		a{
+			display: block;
 
-		svg{width: 100%;}
+			&:hover{
+				svg path{
+					@include transitions-ease(.4s);
+					fill: $body-text-color;
+				}
+			}
+		}
+
+		svg{
+			width: 100%;
+
+			path{
+				@include transitions-ease(.2s);
+			}
+		}
 	}
 }
