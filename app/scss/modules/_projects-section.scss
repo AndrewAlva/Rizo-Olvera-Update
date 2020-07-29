@@ -1,12 +1,18 @@
 #projects-section{
+	.btl-row + .btl-row, .img-container + .img-container{
+		margin-top: 16px;
+	}
+
 	.img-container{
 		position: relative;
 		width: 100%;
-		margin-bottom: 16px;
+		// margin-bottom: 16px;
 		
 		.wrap{
 			position: relative;
 			width: 100%;
+			overflow: hidden;
+			background-color: red;
 
 			img{
 				width: 100%;
@@ -27,8 +33,85 @@
 				p{
 					@include smoothFont;
 					text-transform: uppercase;
+					text-align: center;
+					padding: 0 16px;
+				}
+			}
+		}
+		
+		@include tablet {
+			&.moru-1{
+				padding-left: 8%;
+
+				.wrap{
+					height: 0;
+					padding-bottom: 150.1%;
+				}
+			}
+
+			&.abadia-1{
+				.wrap{
+					height: 0;
+					padding-bottom: 69%;
+				}
+			}
+
+			&.avanti-gdl{
+				padding-left: 32%;
+			}
+		}
+
+	}
+
+	@include mobile {
+		[class*="btl-col"] + [class*="btl-col"]{
+			margin-top: 16px;
+		}
+	}
+
+
+	// Height special style
+	.fill-height{
+		.img-container{
+			.wrap{
+				@include tablet {
+					height: 100%;
+
+					img{
+						position: relative;
+						width: auto;
+						height: 100%;
+						top: 50%; left: 50%;
+						@include translate(-50%, -50%);
+					}
 				}
 			}
 		}
 	}
+
+	.second-line{
+		.img-container{
+			@include tablet {
+				height: 29.86vw;
+				max-height: 268px;
+			}
+
+			@include laptop {max-height: 365px;}
+			@include desktop {max-height: 429px;}
+		}
+	}
+
+	.third-line{
+		.img-container{
+			@include tablet {
+				height: 26.26vw;
+				max-height: 236px;
+			}
+
+			@include laptop {max-height: 324px;}
+			@include desktop {max-height: 380px;}
+		}
+	}
+	
+	
 }

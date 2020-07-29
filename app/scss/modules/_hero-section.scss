@@ -45,7 +45,12 @@
 		.description{
 			p{
 				padding-right: 12px;
+
 				@include tablet {padding-right: 38px;}
+
+				@include laptop {padding-right: 60px;}
+				
+				@include desktop {padding-right: 120px;}
 
 				& + p{
 					margin-top: 1.5em;
@@ -70,6 +75,7 @@
 	.slide-wrap{
 		position: absolute;
 		top: 0; left: 0;
+		width: 100%;
 		opacity: 0;
 		@include scale(1.2, 1.2);
 		transform-origin: center center;

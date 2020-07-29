@@ -2,7 +2,7 @@ mixin vert-photo(project, styling, imgSrc)
 	div(class="img-container #{styling}")
 		.wrap
 			picture
-				source(media="(min-width: 1200px)" srcset="https://via.placeholder.com/668x1000")
+				//- source(media="(min-width: 1200px)" srcset="https://via.placeholder.com/668x1000")
 				img(src="http://www.fillmurray.com/500/800", alt="")
 
 			._overlay
@@ -13,8 +13,8 @@ mixin hor-photo(project, styling, imgSrc)
 	div(class="img-container #{styling}")
 		.wrap
 			picture
-				source(media="(min-width: 1200px)" srcset="https://via.placeholder.com/1200x800")
-				img(src="http://www.fillmurray.com/900/600", alt="")
+				//- source(media="(min-width: 1200px)" srcset="https://via.placeholder.com/1200x840")
+				img(src="http://www.fillmurray.com/900/630", alt="")
 
 			._overlay
 				p.t1 #{project}
@@ -24,68 +24,91 @@ mixin hor-photo(project, styling, imgSrc)
 section#projects-section
 	.btl-grid
 		.btl-row
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-offset-sm-1.btl-col-sm-7
-				+vert-photo("Torre Moru")
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-1.btl-col-sm-11
+				+vert-photo("Torre Moru", "moru-1")
 
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-8
-				+hor-photo("Casa Abadía")
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-12
+				+hor-photo("Casa Abadía", "abadia-1")
 
 
-
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-9
+		.btl-row.second-line.fill-height
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-14
 				+hor-photo("Mueblería Avanti")
 
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-7
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-10
 				+hor-photo("Casa Velasco")
 
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-9
-				+hor-photo("Avanti GDL")
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-7
+		
+		.btl-row.third-line.fill-height
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-14
+				+hor-photo("Avanti GDL", "avanti-gdl")
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-10
 				+hor-photo("Casa VR")
 
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-9
+
+		.btl-row
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-14
 				+hor-photo("Torre Moru")
 				+hor-photo("Edificio M. Barragán")
 				+hor-photo("Casa San Carlos")
 			
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-7
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-10
 				+vert-photo("Torre Moru")
 				+vert-photo("Casa San Carlos")
 
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-9
+
+		.btl-row
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-9
 				+hor-photo("Casa Tapalpa")
 
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-16
+		
+		.btl-row
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-16
 				+hor-photo("Plaza Comercial Saltillo")
 
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-9
+
+		.btl-row
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-9
 				+hor-photo("Canchas Vera - Cruz")
 
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-offset-sm-3.btl-col-sm-13
+
+		.btl-row
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-3.btl-col-sm-13
 				+hor-photo("Salón de Eventos Boca de Arena")
 
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-8
+
+		.btl-row
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-8
 				+hor-photo("Salón de Eventos BDA")
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-8
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-8
 				+hor-photo("Salón de Eventos BDA")
 
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-16
+
+		.btl-row
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-16
 				+hor-photo("Salón de Eventos BDA")
 
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-6
+
+		.btl-row
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-6
 				+vert-photo("Casa Rancho")
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-10
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-10
 				+hor-photo("Casa Rancho")
 				+hor-photo("Casa Rancho")
 
 
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-16
+		.btl-row
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-16
 				+hor-photo("Casa Chapala")
 
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-offset-sm-7.btl-col-sm-9
+
+		.btl-row
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-7.btl-col-sm-9
 				+hor-photo("Casa Villa de Santiago")
 
-			.btl-col-16.btl-offset-xs-2.btl-col-xs-12.btl-col-sm-10
+
+		.btl-row
+			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-10
 				+hor-photo("Casa Villa de Santiago")
 
 
