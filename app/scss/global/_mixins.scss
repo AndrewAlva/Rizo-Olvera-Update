@@ -7,7 +7,7 @@
 
 
 
-@mixin transitions-ease($timing){
+@mixin trans-ease($timing){
 	transition: all $timing cubic-bezier(.3,0,.2,1);
 }
 

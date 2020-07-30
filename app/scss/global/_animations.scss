@@ -1,0 +1,12 @@
+.mask{
+	position: relative;
+	overflow: hidden;
+	white-space: pre;
+
+	&.inline{display: inline-block;}
+	&.lh1{line-height: 1.2em;}
+
+	._text{
+		display: block;
+	}
+}

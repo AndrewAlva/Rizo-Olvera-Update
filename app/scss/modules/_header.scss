@@ -58,7 +58,7 @@
 
 			&:hover{
 				svg path{
-					@include transitions-ease(.4s);
+					@include trans-ease(.4s);
 					fill: $body-text-color;
 				}
 			}
@@ -68,7 +68,7 @@
 			width: 100%;
 
 			path{
-				@include transitions-ease(.2s);
+				@include trans-ease(.2s);
 			}
 		}
 	}

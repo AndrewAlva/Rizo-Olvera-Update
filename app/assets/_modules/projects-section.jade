@@ -1,116 +1,131 @@
-mixin vert-photo(project, styling, imgSrc)
-	div(class="img-container #{styling}")
-		.wrap
-			picture
-				//- source(media="(min-width: 1200px)" srcset="https://via.placeholder.com/668x1000")
-				img(src="http://www.fillmurray.com/500/800", alt="")
-
-			._overlay
-				p.t1 #{project}
-
-
-mixin hor-photo(project, styling, imgSrc)
-	div(class="img-container #{styling}")
-		.wrap
-			picture
-				//- source(media="(min-width: 1200px)" srcset="https://via.placeholder.com/1200x840")
-				img(src="http://www.fillmurray.com/900/630", alt="")
-
-			._overlay
-				p.t1 #{project}
-		
+include ./projects-helpers.jade
 
 
 section#projects-section
 	.btl-grid
 		.btl-row
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-1.btl-col-sm-11
-				+vert-photo("Torre Moru", "moru-1")
+				//- +vert-photo("Torre Moru", "moru-1")
+				+project("Torre Moru",
+					"http://www.fillmurray.com/500/800",
+					"moru-1")
 
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-12
-				+hor-photo("Casa Abadía", "abadia-1")
+				//- +hor-photo("Casa Abadía", "abadia-1")
+				+project("Casa Abadía",
+					"http://www.fillmurray.com/900/630",
+					"abadia-1")
 
 
 		.btl-row.second-line.fill-height
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-14
-				+hor-photo("Mueblería Avanti")
+				+project("Mueblería Avanti",
+					"http://www.fillmurray.com/900/630")
 
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-10
-				+hor-photo("Casa Velasco")
+				+project("Casa Velasco",
+					"http://www.fillmurray.com/900/630")
 
 		
 		.btl-row.third-line.fill-height
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-14
-				+hor-photo("Avanti GDL", "avanti-gdl")
+				+project("Avanti GDL",
+					"http://www.fillmurray.com/900/630",
+					"avanti-gdl")
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-10
-				+hor-photo("Casa VR")
+				+project("Casa VR",
+					"http://www.fillmurray.com/900/630")
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-14
-				+hor-photo("Torre Moru", "moru-2")
-				+hor-photo("Edificio M. Barragán", "barragan-1")
-				+hor-photo("Casa San Carlos", "carlos-1")
+				+project("Torre Moru",
+					"http://www.fillmurray.com/900/630",
+					 "moru-2")
+				+project("Edificio M. Barragán",
+					"http://www.fillmurray.com/900/630",
+					"barragan-1")
+				+project("Casa San Carlos",
+					"http://www.fillmurray.com/900/630",
+					"carlos-1")
 			
 			.vert-wrap.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-10
-				+vert-photo("Torre Moru", "moru-3")
-				+vert-photo("Casa San Carlos", "carlos-2")
+				+project("Torre Moru", 
+					"http://www.fillmurray.com/500/800",
+					"moru-3")
+				+project("Casa San Carlos", 
+					"http://www.fillmurray.com/500/800",
+					"carlos-2")
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-14
-				+hor-photo("Casa Tapalpa")
+				+project("Casa Tapalpa",
+					"http://www.fillmurray.com/900/630")
 
 		
 		.btl-row
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-24
-				+hor-photo("Plaza Comercial Saltillo")
+				+project("Plaza Comercial Saltillo",
+					"http://www.fillmurray.com/900/630")
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-14
-				+hor-photo("Canchas Vera - Cruz")
+				+project("Canchas Vera - Cruz",
+					"http://www.fillmurray.com/900/630")
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-4.btl-col-sm-20
-				+hor-photo("Salón de Eventos Boca de Arena")
+				+project("Salón de Eventos Boca de Arena",
+					"http://www.fillmurray.com/900/630")
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-12
-				+hor-photo("Salón de Eventos BDA")
+				+project("Salón de Eventos BDA",
+					"http://www.fillmurray.com/900/630")
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-12
-				+hor-photo("Salón de Eventos BDA")
+				+project("Salón de Eventos BDA",
+					"http://www.fillmurray.com/900/630")
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-24
-				+hor-photo("Salón de Eventos BDA")
+				+project("Salón de Eventos BDA",
+					"http://www.fillmurray.com/900/630")
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-8._flex
-				+vert-photo("Casa Rancho", "_bottom")
+				+project("Casa Rancho",
+					"http://www.fillmurray.com/500/800",
+					"_bottom")
 
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-16
-				+hor-photo("Casa Rancho")
-				+hor-photo("Casa Rancho")
+				+project("Casa Rancho",
+					"http://www.fillmurray.com/900/630")
+				+project("Casa Rancho",
+					"http://www.fillmurray.com/900/630")
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-24
-				+hor-photo("Casa Chapala")
+				+project("Casa Chapala",
+					"http://www.fillmurray.com/900/630")
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-9.btl-col-sm-15
-				+hor-photo("Casa Villa de Santiago")
+				+project("Casa Villa de Santiago",
+					"http://www.fillmurray.com/900/630")
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-3.btl-col-xs-18.btl-offset-sm-0.btl-col-sm-15
-				+hor-photo("Casa Villa de Santiago")
+				+project("Casa Villa de Santiago",
+					"http://www.fillmurray.com/900/630")
 
 
 
