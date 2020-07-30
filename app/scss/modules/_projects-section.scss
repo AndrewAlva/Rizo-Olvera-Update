@@ -3,6 +3,13 @@
 		margin-top: 16px;
 	}
 
+	// Images position
+	@include tablet {
+		._flex{@include flexIt;}
+
+		._bottom{@include flexAlignSelf-end;}
+	}
+
 	.img-container{
 		position: relative;
 		width: 100%;
@@ -39,6 +46,7 @@
 			}
 		}
 		
+		// Images proportion
 		@include tablet {
 			// Row
 			&.moru-1{
@@ -91,20 +99,44 @@
 			}
 
 			&.moru-3{
+				@include flexGrow(1.09);
+				overflow: hidden;
+
 				.wrap{
-					height: 0;
-					padding-bottom: 144.2%;
+					height: 100%;
+					// padding-bottom: 144.2%;
+					
+					img{
+						position: absolute;
+						width: auto;
+						height: 100%;
+						top: 50%; left: 50%;
+						@include translate(-50%, -50%);
+					}
 				}
 			}
 
 			&.carlos-2{
+				@include flexGrow(1);
+				overflow: hidden;
+
 				.wrap{
-					height: 0;
-					padding-bottom: 131%;
+					height: 100%;
+					// padding-bottom: 131%;
+					
+					img{
+						position: absolute;
+						width: auto;
+						height: 100%;
+						top: 50%; left: 50%;
+						@include translate(-50%, -50%);
+					}
 				}
 			}
-		}
 
+			// Row
+
+		}
 	}
 
 	@include mobile {
@@ -131,6 +163,11 @@
 				}
 			}
 		}
+	}
+
+	.vert-wrap{
+		@include flexIt;
+		@include flexDirection-Vert;
 	}
 
 	.second-line{

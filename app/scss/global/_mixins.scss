@@ -156,6 +156,12 @@
 	align-self: flex-end;
 }
 
+@mixin flexGrow($ratio){
+	-webkit-box-flex: $ratio;
+	-ms-flex-positive: $ratio;
+	flex-grow: $ratio;
+}
+
 
 
 @mixin ani-name($name){
