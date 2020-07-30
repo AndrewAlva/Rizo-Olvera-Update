@@ -40,6 +40,7 @@
 		}
 		
 		@include tablet {
+			// Row
 			&.moru-1{
 				padding-left: 8%;
 
@@ -55,9 +56,52 @@
 					padding-bottom: 69%;
 				}
 			}
+			
 
+			// Row
 			&.avanti-gdl{
 				padding-left: 32%;
+			}
+
+
+			// Row
+			&.moru-2{
+				.wrap {
+					height: 0;
+					padding-bottom: 58.7%;
+				}
+			}
+
+			&.barragan-1{
+				padding-right: 25.5%;
+				
+				.wrap {
+					height: 0;
+					padding-bottom: 87.5%;
+				}
+			}
+
+			&.carlos-1{
+				padding-left: 11.2%;
+				
+				.wrap {
+					height: 0;
+					padding-bottom: 74.7%;
+				}
+			}
+
+			&.moru-3{
+				.wrap{
+					height: 0;
+					padding-bottom: 144.2%;
+				}
+			}
+
+			&.carlos-2{
+				.wrap{
+					height: 0;
+					padding-bottom: 131%;
+				}
 			}
 		}
 
