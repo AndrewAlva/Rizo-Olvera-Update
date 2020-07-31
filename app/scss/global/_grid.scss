@@ -2,8 +2,7 @@
 // Added "btl" prefix => Brunch Template Lighthouse
 	$grid__cols: 24;
 	$grid__maxWidth: 900px;
-	$laptop-grid__maxWidth: 1200px;
-	$desktop-grid__maxWidth: 1400px;
+	$laptop-grid__maxWidth: 1244px;
 
 	// Formula to get column width
 	@function getColWidth($amount){
@@ -92,8 +91,6 @@
 		padding-right: $small-desktop-grid__sidesMargin;
 	}
 	@include desktop {
-		max-width: $desktop-grid__maxWidth;
-		
 		padding-left: $desktop-grid__sidesMargin;
 		padding-right: $desktop-grid__sidesMargin;
 	}
