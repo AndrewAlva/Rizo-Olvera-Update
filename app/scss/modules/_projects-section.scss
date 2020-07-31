@@ -55,7 +55,7 @@
 					}
 				}
 
-				&:hover{
+				&:hover, &.hovered{
 					@include trans-ease(.6s);
 					opacity: 1;
 

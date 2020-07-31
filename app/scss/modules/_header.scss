@@ -55,21 +55,10 @@
 
 		a{
 			display: block;
-
-			&:hover{
-				svg path{
-					@include trans-ease(.4s);
-					fill: $body-text-color;
-				}
-			}
 		}
 
 		svg{
 			width: 100%;
-
-			path{
-				@include trans-ease(.2s);
-			}
 		}
 	}
 }

@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
 			Hero_Slider.stopInterval();
 		}
 	});
+
+	// Enable hover animation triggered by touch on mobile devices
+	Hover_Touch.init();
 });
 
 

@@ -27,7 +27,7 @@ mixin project(title, imgSrc, styling)
 				//- source(media="(min-width: 1200px)" srcset="https://via.placeholder.com/1200x840")
 				img(src="#{imgSrc}", alt="")
 
-			._overlay
+			._overlay.hover-touch
 				p.t1
 					for n in title
 						span.mask.inline.lh1
