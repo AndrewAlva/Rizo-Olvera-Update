@@ -46,6 +46,7 @@
 					text-transform: uppercase;
 					text-align: center;
 					padding: 0 16px;
+					line-height: .4em;
 				}
 
 				.mask{
@@ -103,6 +104,14 @@
 				.wrap {
 					height: 0;
 					padding-bottom: 58.7%;
+
+					img{
+						position: absolute;
+						width: auto;
+						height: 100%;
+						top: 50%; left: 50%;
+						@include translate(-50%, -50%);
+					}
 				}
 			}
 
@@ -112,6 +121,14 @@
 				.wrap {
 					height: 0;
 					padding-bottom: 87.5%;
+
+					img{
+						position: absolute;
+						width: auto;
+						height: 100%;
+						top: 50%; left: 50%;
+						@include translate(-50%, -50%);
+					}
 				}
 			}
 
@@ -121,6 +138,14 @@
 				.wrap {
 					height: 0;
 					padding-bottom: 74.7%;
+
+					img{
+						position: absolute;
+						width: auto;
+						height: 100%;
+						top: 50%; left: 50%;
+						@include translate(-50%, -50%);
+					}
 				}
 			}
 
@@ -134,8 +159,6 @@
 					
 					img{
 						position: absolute;
-						width: auto;
-						height: 100%;
 						top: 50%; left: 50%;
 						@include translate(-50%, -50%);
 					}
@@ -152,8 +175,6 @@
 					
 					img{
 						position: absolute;
-						width: auto;
-						height: 100%;
 						top: 50%; left: 50%;
 						@include translate(-50%, -50%);
 					}
@@ -200,24 +221,28 @@
 	.second-line{
 		.img-container{
 			@include tablet {
-				height: 29.86vw;
-				max-height: 268px;
+				height: 31vw;
+				max-height: 281px;
 			}
 
-			@include laptop {max-height: 365px;}
-			@include desktop {max-height: 429px;}
+			@include laptop {
+				height: 32vw;
+				max-height: 398px;
+			}
 		}
 	}
 
 	.third-line{
 		.img-container{
 			@include tablet {
-				height: 26.26vw;
-				max-height: 236px;
+				height: 26.5vw;
+				max-height: 238px;
 			}
 
-			@include laptop {max-height: 324px;}
-			@include desktop {max-height: 380px;}
+			@include laptop {
+				height: 27.5vw;
+				max-height: 340px;
+			}
 		}
 	}
 	

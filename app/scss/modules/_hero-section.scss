@@ -25,8 +25,9 @@
 
 				@include large-mobile {
 					margin-top: .1em;
-					margin-bottom: 0;
 				}
+
+				@include tablet {margin-bottom: 0;}
 
 				@include laptop {margin-top: .25em;}
 			}
