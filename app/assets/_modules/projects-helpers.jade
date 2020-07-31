@@ -1,31 +1,11 @@
-mixin vert-photo(project, styling, imgSrc)
+mixin project(title, imgSrcs, styling)
 	div(class="img-container #{styling}")
 		.wrap
 			picture
-				//- source(media="(min-width: 1200px)" srcset="https://via.placeholder.com/668x1000")
-				img(src="http://www.fillmurray.com/500/800", alt="")
+				if (imgSrcs.mobile)
+					source(media="(max-width: 575px)" srcset="#{imgSrcs.mobile}")
 
-			._overlay
-				p.t1 #{project}
-
-
-mixin hor-photo(project, styling, imgSrc)
-	div(class="img-container #{styling}")
-		.wrap
-			picture
-				//- source(media="(min-width: 1200px)" srcset="https://via.placeholder.com/1200x840")
-				img(src="http://www.fillmurray.com/900/630", alt="")
-
-			._overlay
-				p.t1 #{project}
-
-
-mixin project(title, imgSrc, styling)
-	div(class="img-container #{styling}")
-		.wrap
-			picture
-				//- source(media="(min-width: 1200px)" srcset="https://via.placeholder.com/1200x840")
-				img(src="#{imgSrc}", alt="")
+				img(src="#{imgSrcs.default}", alt="Foto de #{title}")
 
 			._overlay.hover-touch
 				p.t1
