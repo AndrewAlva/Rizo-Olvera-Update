@@ -46,11 +46,11 @@
 			p{
 				padding-right: 12px;
 
-				@include tablet {padding-right: 38px;}
+				// @include tablet {padding-right: 38px;}
 
-				@include laptop {padding-right: 60px;}
+				// @include laptop {padding-right: 60px;}
 				
-				@include desktop {padding-right: 120px;}
+				// @include desktop {padding-right: 120px;}
 
 				& + p{
 					margin-top: 1.5em;

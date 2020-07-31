@@ -58,6 +58,7 @@ html(class='no-js')
 	body
 		//- Mixins
 		include ../_modules/_svg-mixins.jade
+		include ../_modules/_mixin-helpers.jade
 
 
 		//- testing grid
@@ -124,6 +125,8 @@ html(class='no-js')
 		//- content
 		#main-wrapper
 			block content
+
+		include ../_modules/footer.jade
 
 		//- scripts
 		script(src='js/app.js')

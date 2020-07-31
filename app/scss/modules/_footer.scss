@@ -1,0 +1,42 @@
+#page-footer{
+	padding-top: 24px;
+	padding-bottom: 60px;
+
+	@include small-desktop {
+		padding-top: 40px;
+		padding-bottom: 100px;
+	}
+
+	.contact-data{
+		.inner-col{
+			@include tablet {
+				display: inline-block;
+				vertical-align: top;
+
+				& + .inner-col{
+					margin-left: 2.5em;
+				}
+			}
+
+			@include desktop {
+				& + .inner-col{
+					margin-left: 4em;
+				}
+			}
+		}
+
+		._title{
+			text-transform: uppercase;
+			margin-bottom: 1em;
+			@include tablet {margin-bottom: 0;}
+		}
+
+		ul{
+			margin-bottom: 1em;
+			@include tablet {margin-bottom: 0;}
+		}
+
+	}
+
+	._rights{text-align: right;}
+}

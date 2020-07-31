@@ -9,13 +9,15 @@
 @import 'global/mixins';
 @import 'global/media-queries';
 @import 'global/typefaces';
-@import 'global/animations';
+@import 'global/grid';
 
 @import 'global/default';
-@import 'global/grid';
+@import 'global/animations';
+@import 'global/buttons';
 
 @import 'views/_index';
 
 @import 'modules/header';
+@import 'modules/footer';
 @import 'modules/hero-section';
 @import 'modules/projects-section';

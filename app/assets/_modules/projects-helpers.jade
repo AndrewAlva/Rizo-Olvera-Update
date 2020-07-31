@@ -29,7 +29,6 @@ mixin project(title, imgSrc, styling)
 
 			._overlay
 				p.t1
-					for n, i in title
-						- var counter = i + 1
+					for n in title
 						span.mask.inline.lh1
 							span._text= n

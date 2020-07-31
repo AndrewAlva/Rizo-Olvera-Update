@@ -1,6 +1,8 @@
 #projects-section{
 	.btl-row + .btl-row, .img-container + .img-container{
 		margin-top: 16px;
+
+		@include small-desktop {margin-top: 20px;}
 	}
 
 	// Images position
@@ -62,29 +64,6 @@
 							@include translate(0, 0);
 						}
 
-						// &:first-child ._text{@include trans-ease-delay(.7s, 0s);}
-						// &:nth-child(2) ._text{@include trans-ease-delay(.7s, .15s);}
-						// &:nth-child(3) ._text{@include trans-ease-delay(.7s, .3s);}
-						// &:nth-child(4) ._text{@include trans-ease-delay(.7s, .45s);}
-						// &:nth-child(5) ._text{@include trans-ease-delay(.7s, .6s);}
-						// &:nth-child(6) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(7) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(8) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(9) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(10) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(11) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(12) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(13) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(14) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(15) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(16) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(17) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(18) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(19) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(20) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(21) ._text{@include trans-ease-delay(.7s, .75s);}
-						// &:nth-child(22) ._text{@include trans-ease-delay(.7s, .75s);}
-
 						@for $i from 1 through 32 {
 							&:nth-child(#{$i}) ._text {
 								@include trans-ease-delay(.7s, #{($i * 0.01) - 0.01}s);
@@ -99,8 +78,6 @@
 		@include tablet {
 			// Row
 			&.moru-1{
-				padding-left: 8%;
-
 				.wrap{
 					height: 0;
 					padding-bottom: 150.1%;
@@ -191,6 +168,7 @@
 	@include mobile {
 		[class*="btl-col"] + [class*="btl-col"]{
 			margin-top: 16px;
+			@include small-desktop {margin-top: 20px;}
 		}
 	}
 
