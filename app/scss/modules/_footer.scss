@@ -1,4 +1,6 @@
 #page-footer{
+	position: relative;
+	width: 100%;
 	padding-top: 24px;
 	padding-bottom: 60px;
 
@@ -39,4 +41,22 @@
 	}
 
 	._rights{text-align: right;}
+
+	// Inview animations
+	[data-scroll]{
+		opacity: 0;
+		@include translate(0, 10px);
+
+		&.is-inview{
+			@include trans-ease(.7s);
+			opacity: 1;
+			@include translate(0, 0);
+
+			&[delay="1"]{@include trans-ease-delay(.7s, .1s);}
+			&[delay="2"]{@include trans-ease-delay(.7s, .2s);}
+			&[delay="3"]{@include trans-ease-delay(.7s, .3s);}
+			&[delay="4"]{@include trans-ease-delay(.7s, .4s);}
+			&[delay="5"]{@include trans-ease-delay(.7s, .5s);}
+		}
+	}
 }

@@ -1,4 +1,4 @@
-var HeroSlider_Interval_Switch;
+var HeroSlider_Interval_Switch, LScroll;
 
 document.addEventListener('DOMContentLoaded', function() {
 	// Do something
@@ -18,6 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// Enable hover animation triggered by touch on mobile devices
 	Hover_Touch.init();
+
+	// Enable Locomotive Scroll
+	LScroll = new LocomotiveScroll({
+		el: document.querySelector('[data-scroll-container]'),
+		smooth: true,
+		lerp: 0.08
+	});
 });
 
 

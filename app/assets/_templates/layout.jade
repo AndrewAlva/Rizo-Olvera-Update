@@ -115,17 +115,18 @@ html(class='no-js' lang="es-MX" xml:lang="es-MX")
 
 
 
-
-		//- header
-		include ../_modules/header.jade
-
-					
+						
 
 		//- content
-		#main-wrapper
+		#main-wrapper(data-scroll-container)
+			//- header
+			include ../_modules/header.jade
+			
 			block content
 
-		include ../_modules/footer.jade
+			include ../_modules/footer.jade
+
+
 
 		//- scripts
 		script(src='js/app.js')

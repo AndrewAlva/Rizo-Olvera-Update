@@ -1,14 +1,12 @@
-mixin project(title, imgSrcs, styling)
-	div(class="img-container #{styling}")
-		.wrap
-			picture
-				if (imgSrcs.mobile)
-					source(media="(max-width: 575px)" srcset="#{imgSrcs.mobile}")
+mixin project(title, imgSrcs)
+	picture
+		if (imgSrcs.mobile)
+			source(media="(max-width: 575px)" srcset="#{imgSrcs.mobile}")
 
-				img(src="#{imgSrcs.default}", alt="Foto de #{title}")
+		img(src="#{imgSrcs.default}", alt="Foto de #{title}")
 
-			._overlay.hover-touch
-				p.t1
-					for n in title
-						span.mask.inline.lh1
-							span._text= n
+	._overlay.hover-touch
+		p.t1(data-scroll data-scroll-speed="-0.8")
+			for n in title
+				span.mask.inline.lh1
+					span._text= n

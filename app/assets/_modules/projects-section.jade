@@ -1,76 +1,92 @@
 include ./projects-helpers.jade
 
 
-section#projects-section
+section#projects-section(data-scroll-section)
 	.btl-grid
 		.btl-row
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-2.btl-col-sm-10
-				//- +vert-photo("Torre Moru", "moru-1")
-				+project("Torre Moru",
-					{default: "img/02-torre-moru.jpg"},
-					"moru-1")
+				.img-container.moru-1(data-scroll)
+					.wrap(inview="right")
+						+project("Torre Moru",
+							{default: "img/02-torre-moru.jpg"})
 
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-12
-				//- +hor-photo("Casa Abadía", "abadia-1")
-				+project("Casa Abadía",
-					{default: "img/03-casa-abadia.jpg"},
-					"abadia-1")
+				.img-container.abadia-1(data-scroll)
+					.wrap(inview="up" delay="1")
+						+project("Casa Abadía",
+							{default: "img/03-casa-abadia.jpg"})
 
 
 		.btl-row.second-line.fill-height
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-14
-				+project("Mueblería Avanti",
+				.img-container(data-scroll)
+					.wrap(inview="up")
+						+project("Mueblería Avanti",
 					{default: "img/04-muebleria-avanti.jpg"})
 
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-10
-				+project("Casa Velasco",
+				.img-container(data-scroll)
+					.wrap(inview="left" delay="1")
+						+project("Casa Velasco",
 					{default: "img/05-casa-velasco.jpg"})
 
 		
 		.btl-row.third-line.fill-height
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-14
-				+project("Avanti GDL",
-					{default: "img/06-avanti-gdl.jpg"},
-					"avanti-gdl")
+				.img-container.avanti-gdl(data-scroll)
+					.wrap(inview="right" delay="1")
+						+project("Avanti GDL",
+					{default: "img/06-avanti-gdl.jpg"})
 
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-10
-				+project("Casa VR",
+				.img-container(data-scroll)
+					.wrap(inview="up")
+						+project("Casa VR",
 					{default: "img/07-casa-vr.jpg"})
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-14
-				+project("Torre Moru",
-					{default: "img/08-torre-moru.jpg"},
-					 "moru-2")
+				.img-container.moru-2(data-scroll)
+					.wrap(inview="up")
+						+project("Torre Moru",
+					{default: "img/08-torre-moru.jpg"})
 
-				+project("Edificio M. Barragán",
-					{default: "img/09-barragan.jpg"},
-					"barragan-1")
+				.img-container.barragan-1(data-scroll)
+					.wrap(inview="left")
+						+project("Edificio M. Barragán",
+					{default: "img/09-barragan.jpg"})
 
-				+project("Casa San Carlos",
-					{default: "img/10-san-carlos.jpg"},
-					"carlos-1")
+				.img-container.carlos-1(data-scroll)
+					.wrap(inview="right")
+						+project("Casa San Carlos",
+					{default: "img/10-san-carlos.jpg"})
 			
 			.vert-wrap.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-10
-				+project("Torre Moru", 
-					{default: "img/11-torre-moru.jpg"},
-					"moru-3")
+				.img-container.moru-3(data-scroll)
+					.wrap(inview="left" delay="1")
+						+project("Torre Moru", 
+					{default: "img/11-torre-moru.jpg"})
 
-				+project("Casa San Carlos", 
-					{default: "img/12-san-carlos.jpg"},
-					"carlos-2")
+				.img-container.carlos-2(data-scroll)
+					.wrap(inview="up")
+						+project("Casa San Carlos", 
+					{default: "img/12-san-carlos.jpg"})
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-14
-				+project("Casa Tapalpa",
+				.img-container(data-scroll)
+					.wrap(inview="left")
+						+project("Casa Tapalpa",
 					{default: "img/13-casa-tapalpa.jpg"})
 
 		
 		.btl-row
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-24
-				+project("Plaza Comercial Saltillo",
+				.img-container(data-scroll)
+					.wrap(inview="up")
+						+project("Plaza Comercial Saltillo",
 					{
 						default: "img/14-plaza-comercial-saltillo.jpg",
 						mobile: "img/14-plaza-comercial-saltillo-m.jpg"
@@ -79,28 +95,38 @@ section#projects-section
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-14
-				+project("Canchas Vera - Cruz",
+				.img-container(data-scroll)
+					.wrap(inview="left")
+						+project("Canchas Vera - Cruz",
 					{default: "img/15-canchas-vera-cruz.jpg"})
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-4.btl-col-sm-20
-				+project("Salón de Eventos Boca de Arena",
+				.img-container(data-scroll)
+					.wrap(inview="up")
+						+project("Salón de Eventos Boca de Arena",
 					{default: "img/16-salon-boca-de-arena.jpg"})
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-12
-				+project("Salón de Eventos BDA",
+				.img-container(data-scroll)
+					.wrap(inview="right")
+						+project("Salón de Eventos BDA",
 					{default: "img/17-salon-bda.jpg"})
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-12
-				+project("Salón de Eventos BDA",
+				.img-container(data-scroll)
+					.wrap(inview="up" delay="1")
+						+project("Salón de Eventos BDA",
 					{default: "img/18-salon-bda.jpg"})
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-24
-				+project("Salón de Eventos BDA",
+				.img-container(data-scroll)
+					.wrap(inview="up")
+						+project("Salón de Eventos BDA",
 					{
 						default: "img/19-salon-bda.jpg",
 						mobile: "img/19-salon-bda-m.jpg"
@@ -109,20 +135,27 @@ section#projects-section
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-8._flex
-				+project("Casa Rancho",
-					{default: "img/20-casa-rancho.jpg"},
-					"_bottom")
+				.img-container._bottom(data-scroll)
+					.wrap(inview="right")
+						+project("Casa Rancho",
+					{default: "img/20-casa-rancho.jpg"})
 
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-16
-				+project("Casa Rancho",
+				.img-container(data-scroll)
+					.wrap(inview="left")
+						+project("Casa Rancho",
 					{default: "img/21-casa-rancho.jpg"})
-				+project("Casa Rancho",
+				.img-container(data-scroll)
+					.wrap(inview="up")
+						+project("Casa Rancho",
 					{default: "img/22-casa-rancho.jpg"})
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-24
-				+project("Casa Chapala",
+				.img-container(data-scroll)
+					.wrap(inview="up")
+						+project("Casa Chapala",
 					{
 						default: "img/23-casa-chapala.jpg",
 						mobile: "img/23-casa-chapala-m.jpg"
@@ -131,13 +164,17 @@ section#projects-section
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-9.btl-col-sm-15
-				+project("Casa Villa de Santiago",
+				.img-container(data-scroll)
+					.wrap(inview="right")
+						+project("Casa Villa de Santiago",
 					{default: "img/24-casa-villa-santiago.jpg"})
 
 
 		.btl-row
 			.btl-col-24.btl-offset-xs-4.btl-col-xs-16.btl-offset-sm-0.btl-col-sm-15
-				+project("Casa Villa de Santiago",
+				.img-container(data-scroll)
+					.wrap(inview="left")
+						+project("Casa Villa de Santiago",
 					{default: "img/25-casa-villa-santiago.jpg"})
 
 
