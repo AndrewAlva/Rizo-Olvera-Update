@@ -97,3 +97,49 @@
 		}
 	}
 }
+
+
+
+
+
+// Intro animation
+#hero-section{
+	.site-intro{
+		._title, li, p{
+			opacity: 0;
+			@include translate(0, 10px);
+		}
+	}
+}
+
+.loaded #hero-section{
+	.site-intro{
+		._title, li, p{
+			opacity: 1;
+			@include translate(0, 0);
+		}
+
+		._title{@include trans-ease-delay(.6s, .2s);}
+
+		.right-wrap{
+			.emails{
+				li:first-child{@include trans-ease-delay(.6s, .28s);}
+				li:nth-child(2){@include trans-ease-delay(.6s, .36s);}
+			}
+			.tels{
+				li:first-child{@include trans-ease-delay(.6s, .44s);}
+				li:nth-child(2){@include trans-ease-delay(.6s, .52s);}
+			}
+
+			p{@include trans-ease-delay(.6s, .6s);}
+		}
+
+		.description{
+			p:first-child{@include trans-ease-delay(.6s, .36s);}
+			p:nth-child(2){@include trans-ease-delay(.6s, .44s);}
+		}
+	}
+}
+
+
+

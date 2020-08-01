@@ -196,9 +196,18 @@
 		.wrap{
 			opacity: 0;
 
-			&[inview="up"]{@include translate(0, 30px);}
-			&[inview="left"]{@include translate(30px, 0);}
-			&[inview="right"]{@include translate(-30px, 0);}
+			&[inview="up"]{
+				@include translate(0, 12px);
+				@include tablet {@include translate(0, 30px);}
+			}
+			&[inview="left"]{
+				@include translate(12px, 0);
+				@include tablet {@include translate(30px, 0);}
+			}
+			&[inview="right"]{
+				@include translate(-12px, 0);
+				@include tablet {@include translate(-30px, 0);}
+			}
 		}
 
 		&.is-inview .wrap{

@@ -18,6 +18,7 @@
 		@include flexIt;
 		@include flexJustify;
 		@include flexAlign-bottom;
+		overflow: visible;
 	}
 
 	.logo-wrap{
@@ -64,3 +65,25 @@
 		}
 	}
 }
+
+
+// Intro animation
+#page-header{
+	.logo-wrap, .iso-wrap{
+		opacity: 0;
+		@include translate(0, -10px);
+	}
+}
+
+.loaded #page-header{
+	.logo-wrap, .iso-wrap{
+		opacity: 1;
+		@include translate(0, 0);
+	}
+
+	.logo-wrap{@include trans-ease-delay(.6s, .2s);}
+	.iso-wrap{@include trans-ease-delay(.6s, .3s);}
+}
+
+
+

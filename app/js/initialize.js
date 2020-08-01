@@ -36,4 +36,8 @@ window.onload = function() {
 
 	Hero_Slider.init();
 	HeroSlider_Interval_Switch.init();
+
+
+	// Remove preloader
+	Preloader.init();
 }
