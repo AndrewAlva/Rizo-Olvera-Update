@@ -5,10 +5,15 @@
 	.site-intro{
 		padding-top: 28px;
 		padding-bottom: 28px;
+		@include flexNoWrap;
 
 		@include tablet {
 			padding-top: 40px;
 			padding-bottom: 40px;
+		}
+
+		.contact-info{
+			min-width: 170px;
 		}
 
 		.left-wrap{
@@ -44,9 +49,18 @@
 			ul{
 				margin-bottom: 1em;
 			}
+
+			li{
+				line-height: 1em;
+				@include large-mobile {margin-bottom: .4em;}
+
+				a{line-height: 1.2em;}
+			}
 		}
 
 		.description{
+			@include flexShrink(1);
+
 			p{
 				padding-right: 12px;
 

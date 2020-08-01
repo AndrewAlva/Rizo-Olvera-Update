@@ -25,13 +25,9 @@ $secondary-font: "Avenir-B", Segoe UI, Century Gothic, CenturyGothic, AppleGothi
 
 .f1{
 	font-family: $main-font;
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 1.5em;
 	font-weight: lighter;
-
-	@include tablet {
-		font-size: 12px;
-	}
 
 	@include laptop {
 		font-size: 14px
@@ -40,7 +36,7 @@ $secondary-font: "Avenir-B", Segoe UI, Century Gothic, CenturyGothic, AppleGothi
 
 .f2{
 	font-family: $main-font;
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 1.5em;
 
 	@include tablet {

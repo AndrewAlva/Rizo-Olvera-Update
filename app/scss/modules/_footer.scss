@@ -40,7 +40,13 @@
 
 	}
 
-	._rights{text-align: right;}
+	._rights{
+		margin-top: 80px;
+		@include large-mobile {
+			margin-top: 0px;
+			text-align: right;
+		}
+	}
 
 	// Inview animations
 	[data-scroll]{

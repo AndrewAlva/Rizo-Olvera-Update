@@ -162,6 +162,11 @@
 	flex-grow: $ratio;
 }
 
+@mixin flexShrink($ratio){
+	-ms-flex-negative: $ratio;
+	flex-shrink: $ratio;
+}
+
 
 
 @mixin ani-name($name){

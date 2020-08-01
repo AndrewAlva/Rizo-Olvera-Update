@@ -135,6 +135,11 @@
 						@include translate(-50%, -50%);
 					}
 				}
+
+				._overlay p{
+					@include tablet {max-width: 192px;}
+					@include laptop {max-width: unset;}
+				}
 			}
 
 			&.carlos-1{
@@ -187,8 +192,27 @@
 					}
 				}
 			}
+		}
 
-			// Row
+		&.saltillo{
+			._overlay p{
+				max-width: 245px;
+				@include tablet {max-width: unset;}
+			}
+		}
+
+		&.bda{
+			._overlay p{
+				max-width: 260px;
+				@include tablet {max-width: unset;}
+			}
+		}
+
+		&.santiago{
+			._overlay p{
+				max-width: 202px;
+				@include tablet {max-width: unset;}
+			}
 		}
 
 

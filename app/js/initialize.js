@@ -40,4 +40,7 @@ window.onload = function() {
 
 	// Remove preloader
 	Preloader.init();
+
+	// Reset scroll values for Locomotive smooth scroll
+	LScroll.update(); 
 }

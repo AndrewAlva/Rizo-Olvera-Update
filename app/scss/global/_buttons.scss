@@ -1,6 +1,8 @@
 .ro-link{
 	position: relative;
 	display: inline-block;
+	padding: 12px 0;
+	@include large-mobile {padding: 0; }
 
 	.hover-mask{
 		position: relative;
