@@ -3,8 +3,9 @@
 	width: 100%;
 
 	.btl-row + .btl-row, .img-container + .img-container{
-		margin-top: 16px;
+		margin-top: 8px;
 
+		@include tablet {margin-top: 16px;}
 		@include small-desktop {margin-top: 20px;}
 	}
 
@@ -48,8 +49,18 @@
 					@include smoothFont;
 					text-transform: uppercase;
 					text-align: center;
-					padding: 0 16px;
+					padding: 0 6px;
 					line-height: .4em;
+
+					@include tablet {padding: 0 16px;}
+
+					._word-break{
+						@media (min-width: 360px) {display: none;}
+					}
+					._letter-break{
+						display: none;
+						@media (min-width: 360px) {display: block;}
+					}
 				}
 
 				.mask{
@@ -79,139 +90,155 @@
 		}
 		
 		// Images proportion
-		@include tablet {
-			// Row
-			&.moru-1{
-				.wrap{
-					height: 0;
-					padding-bottom: 150.1%;
+		
+		// Row
+		&.moru-1{
+			.wrap{
+				height: 0;
+				padding-bottom: 150.1%;
+			}
+		}
+
+		&.abadia-1{
+			.wrap{
+				height: 0;
+				padding-bottom: 69%;
+			}
+		}
+		
+
+		// Row
+		&.avanti-gdl{
+			padding-left: 32%;
+		}
+
+
+		// Row
+		&.moru-2{
+			.wrap {
+				height: 0;
+				padding-bottom: 58.7%;
+
+				img{
+					position: absolute;
+					width: auto;
+					height: 100%;
+					top: 50%; left: 50%;
+					@include translate(-50%, -50%);
 				}
 			}
 
-			&.abadia-1{
-				.wrap{
-					height: 0;
-					padding-bottom: 69%;
-				}
-			}
+			.mask-container{position: absolute;}
+		}
+
+		&.barragan-1{
+			padding-right: 25.5%;
 			
+			.wrap {
+				height: 0;
+				padding-bottom: 87.5%;
 
-			// Row
-			&.avanti-gdl{
-				padding-left: 32%;
-			}
-
-
-			// Row
-			&.moru-2{
-				.wrap {
-					height: 0;
-					padding-bottom: 58.7%;
-
-					img{
-						position: absolute;
-						width: auto;
-						height: 100%;
-						top: 50%; left: 50%;
-						@include translate(-50%, -50%);
-					}
-				}
-
-				.mask-container{position: absolute;}
-			}
-
-			&.barragan-1{
-				padding-right: 25.5%;
-				
-				.wrap {
-					height: 0;
-					padding-bottom: 87.5%;
-
-					img{
-						position: absolute;
-						width: auto;
-						height: 100%;
-						top: 50%; left: 50%;
-						@include translate(-50%, -50%);
-					}
-				}
-
-				._overlay p{
-					@include tablet {max-width: 192px;}
-					@include laptop {max-width: unset;}
-				}
-			}
-
-			&.carlos-1{
-				padding-left: 11.2%;
-				
-				.wrap {
-					height: 0;
-					padding-bottom: 74.7%;
-
-					img{
-						position: absolute;
-						width: auto;
-						height: 100%;
-						top: 50%; left: 50%;
-						@include translate(-50%, -50%);
-					}
-				}
-
-				.mask-container{position: absolute;}
-			}
-
-			&.moru-3{
-				@include flexGrow(1.09);
-				overflow: hidden;
-
-				.wrap{
+				img{
+					position: absolute;
+					width: auto;
 					height: 100%;
-					// padding-bottom: 144.2%;
-					
-					img{
-						position: absolute;
-						top: 50%; left: 50%;
-						@include translate(-50%, -50%);
-					}
+					top: 50%; left: 50%;
+					@include translate(-50%, -50%);
 				}
 			}
 
-			&.carlos-2{
-				@include flexGrow(1);
-				overflow: hidden;
+			._overlay p{
+				max-width: 118px;
+				@include tablet {max-width: 192px;}
+				@include laptop {max-width: unset;}
+			}
+		}
 
-				.wrap{
+		&.carlos-1{
+			padding-left: 11.2%;
+			
+			.wrap {
+				height: 0;
+				padding-bottom: 74.7%;
+
+				img{
+					position: absolute;
+					width: auto;
 					height: 100%;
-					// padding-bottom: 131%;
-					
-					img{
-						position: absolute;
-						top: 50%; left: 50%;
-						@include translate(-50%, -50%);
-					}
+					top: 50%; left: 50%;
+					@include translate(-50%, -50%);
+				}
+			}
+
+			.mask-container{position: absolute;}
+		}
+
+		&.moru-3{
+			@include flexGrow(1.09);
+			overflow: hidden;
+
+			.wrap{
+				height: 100%;
+				// padding-bottom: 144.2%;
+				
+				img{
+					position: absolute;
+					top: 50%; left: 50%;
+					@include translate(-50%, -50%);
 				}
 			}
 		}
 
-		&.saltillo{
+		&.carlos-2{
+			@include flexGrow(1);
+			overflow: hidden;
+
+			.wrap{
+				height: 100%;
+				// padding-bottom: 131%;
+				
+				img{
+					position: absolute;
+					top: 50%; left: 50%;
+					@include translate(-50%, -50%);
+				}
+			}
+
 			._overlay p{
-				max-width: 245px;
+				max-width: 100px;
+				@include large-mobile {max-width: unset;}
+			}
+		}
+
+		&.vera{
+			._overlay p{
+				max-width: 156px;
+				@include large-mobile {max-width: unset;}
+			}
+		}
+		
+
+		&.boca-de-arena{
+			._overlay p{
+				max-width: 184px;
 				@include tablet {max-width: unset;}
 			}
 		}
 
 		&.bda{
 			._overlay p{
-				max-width: 260px;
-				@include tablet {max-width: unset;}
+				@media (min-width: 360px) {
+					min-width: 180px;
+					max-width: 190px;
+				}
+				@include large-mobile {max-width: unset;}
 			}
 		}
 
 		&.santiago{
 			._overlay p{
-				max-width: 202px;
-				@include tablet {max-width: unset;}
+				max-width: 142px;
+				@include large-mobile {max-width: unset;}
 			}
 		}
 
@@ -243,28 +270,19 @@
 		}
 	}
 
-	@include mobile {
-		[class*="btl-col"] + [class*="btl-col"]{
-			margin-top: 16px;
-			@include small-desktop {margin-top: 20px;}
-		}
-	}
-
 
 	// Height special style
 	.fill-height{
 		.img-container{
 			.wrap{
-				@include tablet {
-					height: 100%;
+				height: 100%;
 
-					img{
-						position: relative;
-						width: auto;
-						height: 100%;
-						top: 50%; left: 50%;
-						@include translate(-50%, -50%);
-					}
+				img{
+					position: relative;
+					width: auto;
+					height: 100%;
+					top: 50%; left: 50%;
+					@include translate(-50%, -50%);
 				}
 			}
 		}
@@ -277,10 +295,9 @@
 
 	.second-line{
 		.img-container{
-			@include tablet {
-				height: 31vw;
-				max-height: 281px;
-			}
+			height: 31vw;
+			max-height: 281px;
+			
 
 			@include laptop {
 				height: 32vw;
@@ -291,10 +308,10 @@
 
 	.third-line{
 		.img-container{
-			@include tablet {
-				height: 26.5vw;
-				max-height: 238px;
-			}
+			
+			height: 26.5vw;
+			max-height: 238px;
+			
 
 			@include laptop {
 				height: 27.5vw;

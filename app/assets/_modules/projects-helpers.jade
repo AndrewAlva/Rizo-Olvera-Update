@@ -7,6 +7,9 @@ mixin project(title, imgSrcs)
 
 	._overlay.hover-touch
 		p.t1(data-scroll data-scroll-speed="-0.8")
-			for n in title
-				span.mask.inline.lh1
-					span._text.t1= n
+			span._word-break.t1= title
+
+			span._letter-break
+				for n in title
+					span.mask.inline.lh1
+						span._text.t1= n
