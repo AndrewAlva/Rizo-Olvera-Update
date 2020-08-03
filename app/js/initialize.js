@@ -34,8 +34,8 @@ window.onload = function() {
 	console.log("Page fully loaded.");
 	console.log("Initialize.js");
 
-	Hero_Slider.init();
-	HeroSlider_Interval_Switch.init();
+	// Hero_Slider.init();
+	// HeroSlider_Interval_Switch.init();
 
 
 	// Remove preloader
