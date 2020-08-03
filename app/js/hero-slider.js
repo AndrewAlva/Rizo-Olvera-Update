@@ -7,7 +7,7 @@ var Hero_Slider = {
 	totalSlides: 0,
 
 	interval: null,
-	intervalSpeed: 5000,
+	intervalSpeed: 3000,
 
 	init: function(){
 		this.totalSlides = this.slides.length;
