@@ -140,6 +140,12 @@
 	align-items: flex-start;
 }
 
+@mixin flexAlign-stretch{
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch
+}
+
 @mixin flexWrap{
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;

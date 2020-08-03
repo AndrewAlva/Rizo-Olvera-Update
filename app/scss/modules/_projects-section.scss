@@ -9,6 +9,10 @@
 		@include small-desktop {margin-top: 20px;}
 	}
 
+	.stretch-row{
+		@include flexAlign-stretch;
+	}
+
 	// Images position
 	@include tablet {
 		._flex{@include flexIt;}
@@ -174,8 +178,12 @@
 		}
 
 		&.moru-3{
-			@include flexGrow(1.09);
-			overflow: hidden;
+			height: 109%;
+			
+			@include tablet {
+				height: unset;
+				@include flexGrow(1.09);
+			}
 
 			.wrap{
 				height: 100%;
@@ -190,8 +198,12 @@
 		}
 
 		&.carlos-2{
-			@include flexGrow(1);
-			overflow: hidden;
+			height: 100%;
+			
+			@include tablet {
+				height: unset;
+				@include flexGrow(1);
+			}
 
 			.wrap{
 				height: 100%;
@@ -308,7 +320,6 @@
 
 	.third-line{
 		.img-container{
-			
 			height: 26.5vw;
 			max-height: 238px;
 			
