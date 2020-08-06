@@ -75,9 +75,19 @@ section#projects-section(data-scroll-section)
 
 
 		.btl-row
-			.btl-col-14
+			.btl-col-24
 				.img-container(data-scroll)
-					.wrap(inview="left")
+					.wrap(inview="up")
+						+project("Jardín Abadía",
+					{
+						default: "img/13-jardin-abadia.jpg"
+					})
+
+
+		.btl-row
+			.btl-offset-10.btl-col-14
+				.img-container(data-scroll)
+					.wrap(inview="right")
 						+project("Casa Tapalpa",
 					{default: "img/13-casa-tapalpa.jpg"})
 
@@ -130,6 +140,28 @@ section#projects-section(data-scroll-section)
 					{
 						default: "img/19-salon-bda.jpg",
 						mobile: "img/19-salon-bda-m.jpg"
+					})
+
+
+		.btl-row
+			.btl-offset-4.btl-col-20
+				.img-container(data-scroll)
+					.wrap(inview="right")
+						+project("Cava Boca de Arena",
+					{
+						default: "img/hero-slider/01-Slider-7.jpg",
+						mobile: "img/hero-slider/01-Slider-7-m.jpg"
+					})
+
+
+		.btl-row
+			.btl-offset-4.btl-col-12
+				.img-container(data-scroll)
+					.wrap(inview="up")
+						+project("Casa Cordillera",
+					{
+						default: "img/hero-slider/01-Slider-1.jpg",
+						mobile: "img/hero-slider/01-Slider-1-m.jpg"
 					})
 
 
