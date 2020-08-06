@@ -15,8 +15,8 @@
 	$mobile-grid__gutterHalfWidth: $mobile-grid__gutterWidth / 2;
 	
 	// xs:		large-mobile
-	$large-mobile-grid__sidesMargin: 10px;
-	$large-mobile-grid__gutterWidth: 10px;
+	$large-mobile-grid__sidesMargin: 8px;
+	$large-mobile-grid__gutterWidth: 8px;
 	$large-mobile-grid__gutterHalfWidth: $large-mobile-grid__gutterWidth / 2;
 
 	// sm:		tablet
@@ -36,12 +36,12 @@
 
 	// xl:		small-desktop
 	$small-desktop-grid__sidesMargin: 22px;
-	$small-desktop-grid__gutterWidth: 16px;
+	$small-desktop-grid__gutterWidth: 20px;
 	$small-desktop-grid__gutterHalfWidth: $small-desktop-grid__gutterWidth / 2;
 
 	// xxl:		desktop
 	$desktop-grid__sidesMargin: 22px;
-	$desktop-grid__gutterWidth: 16px;
+	$desktop-grid__gutterWidth: 20px;
 	$desktop-grid__gutterHalfWidth: $desktop-grid__gutterWidth / 2;
 
 

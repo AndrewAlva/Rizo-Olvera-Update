@@ -297,6 +297,16 @@
 					@include translate(-50%, -50%);
 				}
 			}
+
+			&.velasco{
+				.wrap{
+					img{
+						width: 100%;
+						height: auto;
+						min-height: 100%;
+					}
+				}
+			}
 		}
 	}
 
@@ -307,7 +317,7 @@
 
 	.second-line{
 		.img-container{
-			height: 31vw;
+			height: 31.4vw;
 			max-height: 281px;
 			
 
@@ -320,9 +330,9 @@
 
 	.third-line{
 		.img-container{
-			height: 26.5vw;
+			height: 27.5vw;
 			max-height: 238px;
-			
+			overflow: hidden;
 
 			@include laptop {
 				height: 27.5vw;
