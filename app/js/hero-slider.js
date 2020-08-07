@@ -14,12 +14,12 @@ var Hero_Slider = {
 	},
 	
 	startInterval: function(){
-		console.log("Hero Slider: Interval started");
+		// console.log("Hero Slider: Interval started");
 		this.interval = setInterval(this.switchSlides.bind(this), this.intervalSpeed);
 	},
 	
 	stopInterval: function(){
-		console.log("Hero Slider: Interval stopped");
+		// console.log("Hero Slider: Interval stopped");
 		clearInterval(this.interval);
 	},
 	
