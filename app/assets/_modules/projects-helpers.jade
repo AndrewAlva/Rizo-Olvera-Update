@@ -1,10 +1,11 @@
 mixin project(title, imgSrcs)
 	picture
 		if (imgSrcs.mobile)
-			source(media="(max-width: 575px)" srcset="#{imgSrcs.mobile}.webp")
-			source(media="(max-width: 575px)" srcset="#{imgSrcs.mobile}.jpg")
+			source(media="(max-width: 575px)" srcset="#{imgSrcs.mobile}.webp" type="image/webp")
+			source(media="(max-width: 575px)" srcset="#{imgSrcs.mobile}.jpg" type="image/jpeg")
 
-		source(srcset="#{imgSrcs.default}.webp")
+		source(srcset="#{imgSrcs.default}.webp" type="image/webp")
+		source(srcset="#{imgSrcs.default}.jpg" type="image/jpeg")
 		img(src="#{imgSrcs.default}.jpg", alt="Foto de #{title}")
 
 	._overlay.hover-touch
