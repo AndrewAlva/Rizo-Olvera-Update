@@ -40,7 +40,7 @@
 			"type": "image/png"
 	}],
 	"lang": "es-MX",
-	"start_url": "index.html",
+	"start_url": "/index.html",
 	"display": "standalone",
 	"background_color": "#ffffff",
 	"theme_color": "#ffffff"
