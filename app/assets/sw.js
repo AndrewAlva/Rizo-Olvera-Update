@@ -1,4 +1,4 @@
-var cacheName = 'rizo-olvera-v.1.0';
+var cacheName = 'rizo-olvera-v2';
 var filesToCache = [
 	'/',
 	'/index.html',

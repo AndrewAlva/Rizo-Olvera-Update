@@ -1,0 +1,22 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    UI Design: María José Rizo (http://www.estudioaire.com/)
+    
+    Frontend Development: Andrew Alvarado (https://andrew.studio/)
+
+
+# THANKS
+
+    Locomotive team for the scroll library: https://locomotivemtl.github.io/locomotive-scroll/
+    Lodash for the debounce/throttle script: https://lodash.com/
+    Alexander Farkas for the lazy loading images script: https://github.com/aFarkas/lazysizes
+
+
+# TECHNOLOGY COLOPHON
+
+	Brunch, Jade, SCSS, npm
+    CSS3, HTML5, Javascript
+    Apache Server Configs

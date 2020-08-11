@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // Trigger functions after page is completely loaded
 window.onload = function() {
 	// Do something, remove preloader perhaps
-	console.log("Page fully loaded.");
-	console.log("Initialize.js");
+	// console.log("Page fully loaded.");
+	// console.log("Initialize.js");
 
 	Hero_Slider.init();
 	HeroSlider_Interval_Switch.init();
